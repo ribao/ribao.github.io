@@ -1,28 +1,85 @@
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Welcome!</title>
-	<meta name="description" content="">
+    <title>Welcome!</title>
 
-	<meta name="HandheldFriendly" content="True">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="shortcut icon" href="../assets/favicon.png?v=c1f66a83a6">
+    <meta name="description" content="">
 
-	<!--[if lt IE 9]>
-	<script src="//cdn.jsdelivr.net/nwmatcher/1.2.5/nwmatcher.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-	<![endif]-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Welcome!">
+    <meta name="twitter:description" content="">
 
-	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/prettify/sunburst.css?v=c1f66a83a6">
-	<link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c1f66a83a6">
+    <meta property="og:url" content="http://localhost:2368">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Welcome!">  
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Still learning...">
 
-	<link rel="canonical" href="index.html">
+    <meta itemprop="name" content="Welcome!">
+    <meta itemprop="description" content="">
+
+    <meta name="twitter:site" content="@yourblogtwitter">
+
+<meta name="twitter:creator" content="@yourtwitter">
+
+<meta property="article:author" content="https://www.facebook.com/yourprofile">
+
+<meta property="article:publisher" content="https://www.facebook.com/yourblogprofile">
+
+<meta property="fb:admins" content="">
+
+<meta name="google-site-verification" content="">
+
+<link rel="author" href="https://plus.google.com/yourprofile">
+
+<meta name="theme-color" content="">
+
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic%7COpen+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.min.css?v=92855c4fd1">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      var ga_ua = 'UA-XXXXX-X';
+
+var disqus_shortname = 'example';
+
+var enable_pjax = true;
+
+      // Pace Options
+      // ==============
+      window.paceOptions = {
+        catchupTime: 100,
+        minTime: 100,
+        elements: false,
+        restartOnRequestAfter: 500,
+        startOnPageLoad: false
+      }
+
+      // Ghostium Globals
+      // ==============
+      window.GHOSTIUM = {};
+      GHOSTIUM.haveGA = typeof ga_ua !== 'undefined' && ga_ua !== 'UA-XXXXX-X';
+      GHOSTIUM.haveDisqus = typeof disqus_shortname !== 'undefined' && disqus_shortname !== 'example';
+      GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
+    </script>
+
+    <script src="../assets/js/head-scripts.min.js?v=92855c4fd1"></script>
+
+    <link rel="canonical" href="index.html">
     <meta name="referrer" content="origin">
     
     <meta property="og:site_name" content="Still learning...">
@@ -60,84 +117,161 @@
 
     <meta name="generator" content="Ghost 0.7">
     <link rel="alternate" type="application/rss+xml" title="Still learning..." href="../rss/index.html">
-</head>
-<body class="post-template">
+  </head>
+  <body class="post-template">
 
-	
-<article class="post">
+    <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
+<nav tabindex="-1" class="drawer">
+  <div class="drawer-container">
+    <!--.drawer-search(role="search")-->
+    <ul role="navigation" class="drawer-list">
+      
+<li class="drawer-list-item">
+  <a href="../" data-pjax>
+    <i class="fa fa-home"></i>Home
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="../rss/index.rss">
+    <i class="fa fa-rss"></i>Subscribe to Feed
+  </a>
+</li>
+<li class="drawer-list-divider">
+<li class="drawer-list-item drawer-list-title">
+  Follow me
+</li>
+<li class="drawer-list-item">
+  <a href="http://twitter.com" target="_blank">
+    <i class="fa fa-twitter"></i>Twitter
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://github.com" target="_blank">
+    <i class="fa fa-github"></i>Github
+  </a>
+</li>
+    </ul>
+  </div>
+</nav>
 
-<header id="head-wsong">
-	<nav id="top-menu-wsong">
-	<div id="rss-subscribe-wsong" class="absolute-options-wsong">
-		<a class="top-menu-link-wsong" href="../rss/index.rss"><span class="fa fa-rss"></span> Subscribe</a>
-	</div>
-	<div id="back-home-wsong" class="absolute-options-wsong">
-		<a class="top-menu-link-wsong" href="../"><span class="fa fa-chevron-left"></span> Home</a>
-	</div>
-	<ul class="nav">
-    <li class="nav-home" role="presentation"><a href="../">Home</a></li>
-</ul>
-</nav>	
-	<div id="mobile-menu-btn-wsong"><span class="fa fa-reorder"></span></div>
-
-	<div id="inside-head-wsong">
-
-
-		<div id="in-post-meta" class="diffuse-elements">
-			<h1 id="in-post-title">Welcome!</h1>
-			<time class="post-date" datetime="2015-12-16">December 16, 2015</time>
-			
-		</div>
-		
-	</div>
-</header>
-
-<section id="in-post-content">
-	<p>Hope to keep up and write some posts in 2016. This is my New Year's resolution.</p>
+    <div class="drawer-overlay"></div>
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+            
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post">
+        <section class="post-container">
+          <header class="post-header">
+            <ul class="post-meta-list">
+              <li class="post-meta-item">
+                <time datetime="2015-12-16" itemprop="datePublished">
+                  a day ago
+                </time>
+              </li>
+              <li class="post-meta-item">
+                <a href="index.html#disqus_thread" data-disqus-identifier="2">Comments</a>
+              </li>
+            </ul>
+            <h1 itemprop="name headline" class="post-title"><a href="index.html" itemprop="url" data-pjax title="Welcome!">Welcome!</a></h1>
+            <!--h2 itemprop="about" class="post-subtitle"></h2-->
+          </header>
+          <aside class="post-side">
+            <div class="post-author">
+              <div class="post-author-info">
+                <a href="index.html" class="post-author-name">
+                  Alberto Ribao
+                </a>
+                <p class="post-author-bio"></p>
+              </div>
+            </div>
+          </aside>
+          <div itemprop="articleBody" class="post-body">
+            <p>Hope to keep up and write some posts in 2016. This is my New Year's resolution.</p>
 
 <p>Merry Christmas!</p>
+          </div>
+          <footer class="post-footer">
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              <div class="post-author-info">
+                <h4 class="post-footer-heading">Written By</h4>
+                <a href="index.html" itemprop="url" class="post-author-name">
+                  <span itemprop="name">Alberto Ribao</span>
+                </a>
+                <p itemprop="description" class="post-author-bio"></p>
+                <p class="post-info">
+                  <b class="post-info-title">Published on</b>
+                  <time class="post-date">December 16, 2015</time>
+                </p>
+              </div>
+            </div>
+            <div class="post-social">
+              <h4 class="post-footer-heading">Spread the word</h4>
+              <a href="index.html#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+              <a href="index.html#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+              <a href="index.html#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+            </div>
+          </footer>
+        </section>
+      <section itemprop="comment" class="post-comments">
+        <div id="disqus_thread"></div>
+      </section>
+    </article>
+
+    <footer role="contentinfo" class="footer">
+  <p><small>© 2015. All Rights Reserved.</small></p>
+  <p><small><a href="http://ghostium.oswaldoacauan.com/" target="_blank">Ghostium Theme</a> by <a href="http://twitter.com/oswaldoacauan" target="_blank">@oswaldoacauan</a></small></p>
+  <p><small>Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a></small></p>
+</footer>
+  </div>
 </section>
 
-<footer id="in-post-footer">
-	<section class="share-post">
-		<span class="share-label">SHARE ON:</span>
-		<a href="https://twitter.com/share?text=Welcome!&amp;url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" class="fa fa-twitter"> <span>Twitter</span></a>
-		<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/welcome/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="fa fa-facebook"> <span>Facebook</span></a>
-		<a href="https://plus.google.com/share?url=http://localhost:2368/welcome/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" class="fa fa-google-plus"> <span>Google+</span></a>
-	</section>
+<script type="text/javascript">
+  if(GHOSTIUM.haveDisqus) {
+    var disqus_identifier = '2';
 
-	<section class="jump-to-posts">
-		<h3>More from Still learning...</h3>
-		
+    if(typeof DISQUS !== 'object') {
+      (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    }
+  } else {
+    document.querySelector('.post-comments').remove();
+  }
+</script>
 
-	</section>
+          </div>
+        </div>
+      </div>
+    </main>
 
-	<section class="post-author">
-		<div class="author-data">
-			<div class="author-info">
-				<h4><a href="../author/alberto/">Alberto Ribao</a></h4>
-			</div>
-		</div>
-	</section>
+    
 
-	<section id="dynacomments" data-backuseid="2"></section>
-</footer>
+    <script src="../assets/js/foot-scripts.min.js?v=92855c4fd1"></script>
 
-</article>
+    <script type="text/javascript">
 
+      if(GHOSTIUM.haveGA) {
+        (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+        function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+        t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+        t.src='//www.google-analytics.com/analytics.js';
+        z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+        ga('create',ga_ua);ga('send','pageview');
+      }
 
-	<footer id="footer-wsong">
-	<section class="dynawidgets-area" data-dynaarea_name="footer"></section>
-	<section id="bottom-footer">
-		<div>
-			<section id="dynasocial-links"></section>
-			<p id="bottom-copyright">© 2015, Willsong by <a href="index.html#">Aftertype</a>. Powered by <a href="http://ghost.org/">Ghost</a>.</p>
-		</div>
-	</section>
-</footer>
-	
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script data-main="/assets/js/main.js?v=c1f66a83a6" type="text/javascript" src="http://cdn.jsdelivr.net/requirejs/2.1.14/require.min.js"></script>
-	
-</body>
+      if(GHOSTIUM.haveDisqus) {
+        (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+      }
+    </script>
+  </body>
